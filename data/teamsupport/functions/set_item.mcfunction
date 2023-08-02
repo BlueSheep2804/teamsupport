@@ -1,0 +1,1 @@
+give @s silverfish_spawn_egg{TS_Item:"set_item",display:{Name:'{"text": "支給アイテムの設定", "italic": false, "color": "light_purple"}'},EntityTag:{Tags:["TS_set_item"]}}
