@@ -1,3 +1,3 @@
-scoreboard objectives add right_click used:carrot_on_a_stick
+scoreboard objectives add TS_right_click used:carrot_on_a_stick
 
 function teamsupport:team/init

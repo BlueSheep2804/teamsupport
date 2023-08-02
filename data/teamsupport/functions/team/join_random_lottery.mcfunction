@@ -1,4 +1,4 @@
-scoreboard players operation @s team = #team team
+scoreboard players operation @s TS_team = #team TS_team
 
-scoreboard players add #team team 1
-scoreboard players operation #team team %= #2 team
+scoreboard players add #team TS_team 1
+scoreboard players operation #team TS_team %= #2 TS_team

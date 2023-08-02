@@ -1,5 +1,5 @@
-scoreboard objectives add team dummy
-scoreboard players set #team team 0
-scoreboard players set #2 team 2
+scoreboard objectives add TS_team dummy
+scoreboard players set #team TS_team 0
+scoreboard players set #2 TS_team 2
 
-scoreboard objectives add team_entry dummy
+scoreboard objectives add TS_team_entry dummy
