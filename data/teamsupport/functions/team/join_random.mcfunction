@@ -4,3 +4,4 @@ team join blue @a[scores={TS_team=0}]
 team join red @a[scores={TS_team=1}]
 
 clear @a carrot_on_a_stick{TS_Item: "entry"}
+data remove storage teamsupport:state is_entry
