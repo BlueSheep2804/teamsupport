@@ -2,3 +2,5 @@ execute as @a[scores={team_entry=1},sort=random] run function teamsupport:team/j
 
 team join blue @a[scores={team=0}]
 team join red @a[scores={team=1}]
+
+clear @a carrot_on_a_stick{TS_Item: "entry"}
