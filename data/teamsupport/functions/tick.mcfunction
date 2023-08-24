@@ -1,8 +1,8 @@
 execute as @a[scores={TS_right_click=1..}] at @s if data storage teamsupport:state is_entry if predicate teamsupport:hold_item/entry run function teamsupport:team/use_entry
 execute as @a[scores={TS_right_click=1..}] at @s run scoreboard players set @s TS_right_click 0
 
-execute as @e[type=silverfish,tag=TS_set_item] at @s unless entity @e[type=item_display,tag=TS_set_item] run function teamsupport:equipment/set_item_place
-execute as @e[type=silverfish,tag=TS_set_item] at @s if entity @e[type=item_display,tag=TS_set_item] run function teamsupport:equipment/set_item_place_exists
+execute as @e[type=glow_item_frame,tag=TS_set_item] at @s unless entity @e[type=item_display,tag=TS_set_item] run function teamsupport:equipment/set_item_place
+execute as @e[type=glow_item_frame,tag=TS_set_item] at @s if entity @e[type=item_display,tag=TS_set_item] run function teamsupport:equipment/set_item_place_exists
 execute as @a at @s if predicate teamsupport:equipment/looking_set_item run data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] text set from storage teamsupport:data set_item_info
 execute as @a at @s unless predicate teamsupport:equipment/looking_set_item run data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] text set value ''
 
