@@ -16,4 +16,4 @@ data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] text set f
 data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] billboard set value center
 
 tp @s ~ -80 ~
-kill @e[type=silverfish,tag=TS_set_item]
+kill @s
