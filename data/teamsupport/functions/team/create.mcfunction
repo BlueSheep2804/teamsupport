@@ -1,3 +1,4 @@
+# チーム作成
 team add blue
 team add red
 

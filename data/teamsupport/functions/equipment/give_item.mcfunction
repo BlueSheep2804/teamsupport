@@ -1,3 +1,4 @@
+# 支給アイテムの付与
 item replace entity @a[scores={TS_team_entry=1}] hotbar.0 from block ~ ~ ~ container.0
 item replace entity @a[scores={TS_team_entry=1}] hotbar.1 from block ~ ~ ~ container.1
 item replace entity @a[scores={TS_team_entry=1}] hotbar.2 from block ~ ~ ~ container.2

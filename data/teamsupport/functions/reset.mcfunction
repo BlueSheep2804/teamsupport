@@ -1,3 +1,4 @@
+# リセット
 function teamsupport:team/reset
 function teamsupport:timer/reset
 

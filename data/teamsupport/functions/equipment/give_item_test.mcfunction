@@ -1,3 +1,4 @@
+# 支給アイテムの付与(試しに付与する時に使用)
 item replace entity @s hotbar.0 from block ~ ~ ~ container.0
 item replace entity @s hotbar.1 from block ~ ~ ~ container.1
 item replace entity @s hotbar.2 from block ~ ~ ~ container.2

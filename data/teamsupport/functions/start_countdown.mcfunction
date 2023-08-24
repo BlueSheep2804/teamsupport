@@ -1,3 +1,4 @@
+# カウントダウンのスケジュール設定
 schedule function teamsupport:countdown/3 1s
 schedule function teamsupport:countdown/2 2s
 schedule function teamsupport:countdown/1 3s

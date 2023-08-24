@@ -1,3 +1,4 @@
+# 分・秒の計算
 scoreboard players add #tick TS_timer 1
 scoreboard players operation #s TS_timer = #tick TS_timer
 scoreboard players operation #s TS_timer /= #20 TS_timer

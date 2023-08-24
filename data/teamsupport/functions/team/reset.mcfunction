@@ -1,3 +1,4 @@
+# チームのリセット
 team remove blue
 team remove red
 
