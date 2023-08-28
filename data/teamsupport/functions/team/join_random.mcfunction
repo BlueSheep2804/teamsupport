@@ -11,4 +11,4 @@ title @a[team=red] title {"text": "あなたは", "bold": true, "extra": [{"text
 # エントリー用アイテム削除
 clear @a carrot_on_a_stick{TS_Item: "entry"}
 
-data remove storage teamsupport:state is_entry
+scoreboard players set can_entry TS_state 0

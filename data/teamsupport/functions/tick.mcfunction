@@ -1,5 +1,5 @@
 # 右クリック検知
-execute if data storage teamsupport:state is_entry as @a[scores={TS_right_click=1..},predicate=teamsupport:hold_item/entry] at @s run function teamsupport:team/use_entry
+execute if predicate teamsupport:can_entry as @a[scores={TS_right_click=1..},predicate=teamsupport:hold_item/entry] at @s run function teamsupport:team/use_entry
 execute as @a[scores={TS_right_click=1..}] at @s run scoreboard players set @s TS_right_click 0
 
 # 支給アイテム設定用アイテム検知
@@ -11,8 +11,8 @@ execute as @a[predicate=teamsupport:equipment/looking_set_item] at @s run data m
 execute as @a[predicate=!teamsupport:equipment/looking_set_item] at @s run data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] text set value '{"text":""}'
 
 # エントリー受付中のステータス処理
-execute if data storage teamsupport:state is_entry store result storage teamsupport:state players int 1 run list
-execute if data storage teamsupport:state is_entry as @a run function teamsupport:team/entry_status
+execute if predicate teamsupport:can_entry store result score #all TS_team_entry run list
+execute if predicate teamsupport:can_entry as @a run function teamsupport:team/entry_status
 
 # タイマー
 execute if predicate teamsupport:timer/is_enabled run function teamsupport:timer/tick
