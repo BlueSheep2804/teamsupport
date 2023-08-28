@@ -9,6 +9,7 @@ scoreboard objectives add TS_state dummy
 
 # 設定用スコアボード
 scoreboard objectives add TS_settings dummy
+scoreboard players set #2 TS_settings 2
 execute unless score $can_select_team TS_settings matches -2147483648..2147483647 run scoreboard players set $can_select_team TS_settings 0
 execute unless score $auto_start_timer TS_settings matches -2147483648..2147483647 run scoreboard players set $auto_start_timer TS_settings 1
 
