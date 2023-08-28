@@ -1,13 +1,13 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{TS_Item:\"entry\",CustomModelData:1}"
+    "tag": "{TS_Item:\"entry_observer\",CustomModelData:1}"
   },  
   {
     "function": "minecraft:set_name",
     "entity": "this",
     "name": {
-      "text": "エントリーする",
+      "text": "観戦する",
       "color": "yellow",
       "italic": false
     }

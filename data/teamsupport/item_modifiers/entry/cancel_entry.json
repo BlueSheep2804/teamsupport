@@ -1,9 +1,0 @@
-{
-  "function": "minecraft:set_name",
-  "entity": "this",
-  "name": {
-    "text": "エントリーをキャンセルする",
-    "color": "yellow",
-    "italic": false
-  }
-}
