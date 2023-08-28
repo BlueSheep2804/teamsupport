@@ -1,6 +1,6 @@
 # タイマースコアボードの初期化
 scoreboard objectives add TS_timer dummy
-scoreboard players set #tick TS_timer 0
+execute unless score #tick TS_timer matches -2147483648..2147483647 run scoreboard players set #tick TS_timer 0
 scoreboard players set #20 TS_timer 20
 scoreboard players set #60 TS_timer 60
 execute unless score #max TS_timer matches -2147483648..2147483647 run scoreboard players set #max TS_timer 6000
