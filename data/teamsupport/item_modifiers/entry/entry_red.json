@@ -1,0 +1,21 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{TS_Item:\"entry_red\",CustomModelData:1}"
+  },  
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "赤チーム",
+      "color": "red",
+      "italic": false,
+      "extra": [
+          {
+              "text": "にエントリーする",
+              "color": "yellow"
+          }
+      ]
+    }
+  }
+]
