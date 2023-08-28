@@ -11,6 +11,7 @@ execute as @a[predicate=teamsupport:equipment/looking_set_item] at @s run data m
 execute as @a[predicate=!teamsupport:equipment/looking_set_item] at @s run data modify entity @e[type=text_display,tag=TS_set_item_info,limit=1] text set value '{"text":""}'
 
 # エントリー受付中のステータス処理
+execute store result score #total TS_team_entry if entity @a[scores={TS_team_entry=1..}]
 execute if predicate teamsupport:can_entry store result score #all TS_team_entry run list
 execute if predicate teamsupport:can_entry as @a run function teamsupport:team/entry_status
 

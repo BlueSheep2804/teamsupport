@@ -5,4 +5,3 @@ scoreboard players set #2 TS_team 2
 
 # エントリー中のプレイヤー管理用のスコアボード
 scoreboard objectives add TS_team_entry dummy
-scoreboard players set #total TS_team_entry 0
